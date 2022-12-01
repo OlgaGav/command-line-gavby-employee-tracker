@@ -1,0 +1,27 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "Command-line application, help get and track information about the business",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olga Gavrushenko",
+  "license": "n/a",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlgaGav/command-line-gavby-employee-tracker"
+  },
+  "keywords": [
+    "command-line",
+    "tracker",
+    "employee"
+  ],
+  "bugs": {
+    "url": "https://github.com/OlgaGav/command-line-gavby-employee-tracker"
+  },
+  "homepage": "https://github.com/OlgaGav/command-line-gavby-employee-tracker#readme"
+}
