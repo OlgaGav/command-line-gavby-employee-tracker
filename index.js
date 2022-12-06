@@ -195,7 +195,6 @@ const executeRequest = (queryRequest) => {
           console.log("error in query");
           askRequest();
         } else {
-          console.log(departments);
           inquirer
             .prompt([
               {
@@ -397,7 +396,7 @@ const executeRequest = (queryRequest) => {
                       console.log("Error in query. Role was not updated.");
                     } else {
                       console.log(
-                        "Role fro the employee was updated successfully."
+                        "Role of the employee was updated successfully."
                       );
                     }
                     askRequest();
@@ -548,9 +547,11 @@ const executeRequest = (queryRequest) => {
         }
       });
       break;
+    case "Exit":
+      console.log("Thank you for using this application. Use CRTL+C to end the process");
+      break;
     default:
       console.log("no option selected");
-      exit;
   }
 };
 
