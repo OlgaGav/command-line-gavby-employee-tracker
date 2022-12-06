@@ -107,8 +107,8 @@ __________________  ___________    __________________    ____________
 
 console.log(header);
 
-const askRequest = () => {
-  inquirer
+const askRequest = async () => {
+  let res = await inquirer
     .prompt([
       {
         name: "start",
@@ -117,9 +117,7 @@ const askRequest = () => {
         choices: optionsToChoose,
       },
     ])
-    .then((res) => {
-      executeRequest(res.start);
-    });
+    executeRequest(res.start);
 };
 
 const executeRequest = (queryRequest) => {
