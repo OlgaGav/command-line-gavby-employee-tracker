@@ -74,7 +74,13 @@
     
   ## Contribution
 
-  Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated. - Fork the Project - Create your Feature Branch - Commit your Changes - Push to the Branch - Open Pull Request
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated. 
+  
+  - Fork the Project 
+  - Create your Feature Branch 
+  - Commit your Changes 
+  - Push to the Branch 
+  - Open Pull Request
   
   ## Tests
   
