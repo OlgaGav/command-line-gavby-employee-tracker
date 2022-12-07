@@ -12,6 +12,22 @@ const DeleteRole = require('./lib/deleteRole');
 const DeleteEmployee = require('./lib/deleteEmployee');
 const DeleteDepartment = require('./lib/deleteDepartment');
 const query = new Query();
+const header = `
+                             ^
+                _______     ^^^
+               |xxxxxxx|  _^^^^^_
+               |xxxxxxx| | [][] |
+            ______xxxxx| |[][][]|
+           |++++++|xxxx| |[][][]|      EMPLOYEE
+           |++++++|xxxx| |[][][]|      TRACKER
+           |++++++|_________  []|
+           |++++++|=|=|=|=|=| []|
+           |++++++|=|=|=|=|=| []|
+___________|++++++|  _______|   _________   _________  _________
+      _______________   ______________      ______________
+__________________  ___________    __________________    ____________
+
+`;
 
 let userOptions = [];
 let viewAllDepartments = new View(`01`, `view all departments`, query.viewAllDepartments());
@@ -71,15 +87,13 @@ const showResult = async (selectedOption) => {
   await askUser();
 }
 
-askUser();
-
 const wantToExit = () =>
   inquirer
     .prompt([
       {
         name: "exit",
         type: "confirm",
-        message: "Want to end the application?",
+        message: "Do you want to exit the application?",
       },
     ])
     .then((answer) => {
@@ -89,3 +103,6 @@ const wantToExit = () =>
         askUser();
       }
     });
+
+console.log(header);
+askUser();
