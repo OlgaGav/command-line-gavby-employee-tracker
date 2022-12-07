@@ -167,7 +167,7 @@ const executeRequest = (queryRequest) => {
               {
                 type: "list",
                 name: "manager",
-                message: "Please the manager name from the list: ",
+                message: "Please select the manager name from the list: ",
                 choices: result,
               },
             ])
@@ -547,10 +547,10 @@ const executeRequest = (queryRequest) => {
       break;
     case "Exit":
       console.log("Thank you for using this application. Use CRTL+C to end the process");
-      break;
     default:
       console.log("no option selected");
   }
 };
 
 askRequest();
+
