@@ -5,7 +5,7 @@
 
   ## Description
   
-  This is a command-line application which help to manage company's employee database. it allows  view, add, update and delete records in database using intuitive interface.
+  This is a command-line application which help to manage company's employee database. It allows view, add, update and delete records in database using intuitive interface.
 
   ![this image display the screenshot of the 'Employee Tracker' application](./assets/images/app_menu.png)
 
@@ -49,7 +49,7 @@
     - Delete employee
   - Select the action you want to do, and answer the follow-up questions. 
   
-  See the video instructions: `TBU`
+  See the walkthrough video how to use the application: `https://drive.google.com/file/d/1AFrdFt45CFcmEWWlHEg5_8icQFvYXiQ5/view`
   
   
   ## Credits
