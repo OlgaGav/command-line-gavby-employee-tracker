@@ -27,7 +27,17 @@
     Note: for testing purpose you may populate db with test data:  ./db/seeds.sql
   3. run the application: node index.js 
   
-  **Note:** if you observe the connection error, check the version of node. It was developed and tested with `node version 16.18.1`
+  **Note:** 
+  - if you observe the connection error, check the version of node. It was developed and tested with `node version 16.18.1`
+  - connection details can be updated ./lib/query.js  
+   - Predefined values:
+   
+    {
+      host: "localhost",
+      user: "root",
+      password: "",
+      ...
+    }
   
   ## Usage
   
