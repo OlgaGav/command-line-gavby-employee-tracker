@@ -49,7 +49,7 @@
     - Delete employee
   - Select the action you want to do, and answer the follow-up questions. 
   
-  See the walkthrough video how to use the application: `https://drive.google.com/file/d/1AFrdFt45CFcmEWWlHEg5_8icQFvYXiQ5/view`
+  See the walkthrough video how to use the application: [OG:  walkthrough video how to use command-line-gavby-employee-tracker](https://drive.google.com/file/d/1AFrdFt45CFcmEWWlHEg5_8icQFvYXiQ5/view)
   
   
   ## Credits
