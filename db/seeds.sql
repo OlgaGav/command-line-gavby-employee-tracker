@@ -36,71 +36,14 @@ VALUES
     (310, "Alan", "Cochran", 205, null),
     (311, "Rene", "Lovelace", 204, null);
 
--- Update Managers for employees: UPDATE employee
-SET
-    manager_id = 302
-WHERE
-    id = 301;
-
-UPDATE
-    employee
-SET
-    manager_id = 306
-WHERE
-    id = 303;
-
-UPDATE
-    employee
-SET
-    manager_id = 306
-WHERE
-    id = 304;
-
-UPDATE
-    employee
-SET
-    manager_id = 309
-WHERE
-    id = 305;
-
-UPDATE
-    employee
-SET
-    manager_id = 302
-WHERE
-    id = 306;
-
-UPDATE
-    employee
-SET
-    manager_id = 306
-WHERE
-    id = 307;
-
-UPDATE
-    employee
-SET
-    manager_id = 307
-WHERE
-    id = 308;
-
-UPDATE
-    employee
-SET
-    manager_id = 306
-WHERE
-    id = 309;
-
-UPDATE
-    employee
-SET
-    manager_id = 307
-WHERE
-    id = 310;
-
-UPDATE
-    employee
-SET
-    manager_id = 302
-WHERE
-    id = 311;
+-- Update Managers for employees: 
+UPDATE employee SET manager_id = 302 WHERE id = 301;
+UPDATE employee SET manager_id = 306 WHERE id = 303;
+UPDATE employee SET manager_id = 306 WHERE id = 304;
+UPDATE employee SET manager_id = 309 WHERE id = 305;
+UPDATE employee SET manager_id = 302 WHERE id = 306;
+UPDATE employee SET manager_id = 306 WHERE id = 307;
+UPDATE employee SET manager_id = 307 WHERE id = 308;
+UPDATE employee SET manager_id = 306 WHERE id = 309;
+UPDATE employee SET manager_id = 307 WHERE id = 310;
+UPDATE employee SET manager_id = 302 WHERE id = 311;
