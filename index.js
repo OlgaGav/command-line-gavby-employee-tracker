@@ -28,7 +28,8 @@ ___________|++++++|  _______|   _________   _________  _________
 __________________  ___________    __________________    ____________
 
 `;
-
+// create objects with name of option that will be avaiable for user, 
+// and function which has corresponding sql query
 let userOptions = [];
 let viewAllDepartments = new View(`01`,`View all departments`, query.viewAllDepartments());
 let viewAllRoles = new View(`02`, `View all roles`, query.viewAllRoles());
@@ -45,6 +46,7 @@ let deleteDepartment = new DeleteDepartment(`12`, `Delete department`, query.del
 let deleteRole = new DeleteRole(`13`, `Delete role`, query.deleteRole());
 let deleteEmployee = new DeleteEmployee(`14`, `Delete employee`, query.deleteEmployee());
 
+// populate list of options
 userOptions.push(
   viewAllDepartments,
   viewAllRoles,
@@ -62,9 +64,11 @@ userOptions.push(
   deleteEmployee
 );
 
+// create a list of options with names, and add in addition Quit option
 const options = userOptions.map((option) => option.name);
 const listOfOptions = [...options, "Quit"];
 
+// function to ask what action user want to do
 const askUser = async () => {
   let res = await inquirer.prompt([
     {
@@ -84,11 +88,14 @@ const askUser = async () => {
   }
 };
 
+// this function is called when user select what action to do. 
+// in scope of thsi function called executeQuery() function from corresponding instance of class
 const showResult = async (selectedOption) => {
   await selectedOption.executeQuery();
   await askUser();
 };
 
+// function if user selet option to Quit application
 const wantToQuit = () =>
   inquirer
     .prompt([
